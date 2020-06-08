@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica 2</title>
+    <link rel="stylesheet" type="text/css" href="Practica 2 HTML CSS.css">
+</head>
+<body>
+    <header>
+        <hgroup>
+            <h1>Esto es un título principal</h1>
+            <h2 hidden>Esto es un subtítulo</h2>
+        </hgroup>
+    </header>
+    <nav>
+
+    </nav>
+    <main>
+        <section>
+            <p spellcheck contenteditable="true">La istoria del gato se basa sobre todo en la percepción que el hombre tiene del pequeño felino. Se cree que la domesticación del gato comenzó entre el 7500 a. C. y el 7000 a. C. La visión que el hombre tiene del gato difiere totalmente de una época a otra, siendo desde la antigüedad, cuando lo veneraban, hasta la Edad media, cuando los quemaban en las hogueras, pensando que era un animal diabólico.</p>
+            <figure>
+                <img src="https://i.ytimg.com/vi/IIjjrsepktA/maxresdefault.jpg" alt="Imagen de gatito" width="50%"/>
+                <figcaption> Gato pequeño jugando </figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2>Razas de gatos</h2>
+            <ol reversed>
+                <li>Gato bengalí</li>
+                <li>Gato persa</li>
+                <li>Gato siamés</li>
+                <li>Gato sphynx</li>
+            </ol>
+        </section>
+        <section>
+            <details>
+                <summary>Ailurofilia</summary>
+                Patrón de comportamiento sexual en el que la fuen<wbr>te predominante de placer es, en este caso, el gato. 
+            </details>
+            <label>Contenido visualizado</label>
+            <meter
+                min="0" max="100"
+                low="33" high="66" optimum="80"
+                value="50">
+            </meter>
+            <label>Contenido visualizado</label>
+            <progress 
+                max="100" 
+                value="70"> 70%
+            </progress>
+        </section>
+        <section>
+            <form action="mailto:saraortega_2007@hotmail.com" method="POST" autocomplete="on" novalidate>
+                <h3>Introduzca sus datos</h3>
+                <fieldset>
+                    <legend>Datos del usuario</legend>
+                <label for="nombre">Nombre:  </label>
+                <input type="text" name="nombre" id="nombre" required> </br></br>
+                <label for="apellidos">Apellidos:  </label>
+                <input type="text" name="apellidos" id="apellidos" tabindex="2" /> </br></br>
+                <label for="edad">Edad:  </label>
+                <input type="number" name="edad" id="edad" min="18" max="100"> </br></br>
+                <label for="direccion">Dirección:  </label>
+                <input type="text" name="direccion" id="direccion" tabindex="3"> </br></br>
+                <label for="sexo">Seleccione sexo:  </label>
+                Hombre<input type="radio" name="sexo" id="hombre" tabindex="4">
+                Mujer<input type="radio" name="sexo" id="mujer" tabindex="5"> </br></br>
+                <label for="estado">Estado civil:  </label>
+                <input list="situaciones" id="estado" name="estado"/>
+                    <datalist id="situaciones">
+                        <option value="Soltero/a">
+                        <option value="Casado/a">
+                        <option value="Divorciado/a">
+                        <option value="Viudo/a">
+                        <option value="Otro">
+                    </datalist></br></br>
+            </fieldset>
+            <fieldset>
+                <legend>Datos del usuario</legend>
+                <label for="nick">Nick:  </label><input type="text" name="nick" id="nick" pattern="[a-z]{4,8}" title="4 to 8 lowercase letters"></br></br>
+                <label for="contraseña">Contraseña:  </label><input type="password" name="contraseña" id="contraseña" tabindex="8"> </br></br>
+            </fieldset>
+            <fieldset>
+                <legend>Interesado en:  </legend>
+                <label for="interes">Seleccione en qué está interesado:  </label></br>
+                Programación web <input type="checkbox" name="programación_web" id="interes" tabindex="9">
+                Ofimática <input type="checkbox" name="ofimática" id="interes" tabindex="10">
+                Diseño gráfico <input type="checkbox" name="diseño_gráfico" id="interes" tabindex="11"> </br></br>
+            </fieldset>
+            <fieldset>
+                <legend>Observaciones adicionales:  </legend>
+                <label for="observaciones">Observaciones:  </label></br>
+                <textarea cols="25" rows="5" id="observaciones" placeholder="Escriba aquí sus observaciones"></textarea>
+                <input type="submit" value="enviar">
+                <input type="reset" value="borrar">
+            </fieldset>
+            <fieldset>
+                <input type="range" id="num1" value="50">
+                <input type="range" id="num2" value="50">
+                <output name="suma" for="num1 num2"></output>
+            </fieldset>
+            </form>
+        </section>
+    </br>
+        <audio controls>
+            <source src="preview.mp3" type="audio/mp3">
+        </audio>
+    </br></br>
+        <video controls>
+            <source src="video.mp4" type="video/mp4" width="320" height="240">
+        </video>
+    </br></br>
+        <div class="animation"></div>
+    </br></br>
+        <div class="background-clip"></div>
+    </br>
+        <div class="background-origin"></div>
+    </br>
+        <div class="multi-bg-example"></div>
+
+
+    </br></br>
+    <div class="shadow-radius"></div>
+    </br></br>
+
+    <div class="border-img"></div>
+
+    </br></br>
+    <div id="div1">
+        ABCDEFGHIJKLMOPQRSTUVWXYZABCDEFGHIJKLMOPQRSTUVWXYZ
+    </div>
+    <div id="div2">
+        ABCDEFGHIJKLMOPQRSTUVWXYZABCDEFGHIJKLMOPQRSTUVWXYZ
+    </div>
+    <div id="div3">
+        ABCDEFGHIJKLMOPQRSTUVWXYZABCDEFGHIJKLMOPQRSTUVWXYZ
+    </div>
+    <div id="div4">
+        ABCDEFGHIJKLMOPQRSTUVWXYZABCDEFGHIJKLMOPQRSTUVWXYZ
+        ABCDEFGHIJKLMOPQRSTUVWXYZABCDEFGHIJKLMOPQRSTUVWXYZ
+        ABCDEFGHIJKLMOPQRSTUVWXYZABCDEFGHIJKLMOPQRSTUVWXYZ
+        ABCDEFGHIJKLMOPQRSTUVWXYZABCDEFGHIJKLMOPQRSTUVWXYZ
+    </div>
+
+    </br></br>
+    <div id="caja_padre">
+    <div id="caja_flex1">1</div>
+    <div id="caja_flex2">2</div>
+    <div id="caja_flex3">3</div>
+    <div id="caja_flex4">4</div>
+    </div>
+    </br></br>
+
+    <p class="times">This text uses the Times font (10px), which is hard to read in small sizes.</p>
+    <p class="verdana">This text uses the Verdana font (10px), which has relatively large lowercase letters.</p>
+    <p class="adjtimes">This is the 10px Times, but now adjusted to the same aspect ratio as the Verdana.</p>
+    </br></br>
+
+    <p class="column">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ullam itaque aspernatur, voluptatibus officia amet tenetur necessitatibus sit quam temporibus maiores eaque eveniet delectus pariatur exercitationem nostrum beatae cum. Deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, quibusdam porro. Reiciendis, explicabo a. Doloribus voluptatum illo neque ipsa ullam modi in accusamus commodi quos id impedit, corporis obcaecati illum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, ut veritatis esse minima assumenda saepe optio consequatur possimus deserunt dignissimos impedit inventore doloremque ad odio obcaecati, exercitationem fuga quasi suscipit!</p>
+
+
+
+    </main>
+    <aside>
+
+    </aside>
+    <footer>
+
+    </footer>
+</body>
