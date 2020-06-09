@@ -128,10 +128,108 @@
   
   .adjtimes {
     font-family: Times, serif; 
-    font-size-adjust: 0.9;
+    font-size-adjust: 0.6;
     font-size: 10px;
   }
   .column {
       columns: 200px;
       column-rule: 3px green dashed;
+  }
+  .overflow {
+    width: 200px;
+    border: 1px solid;
+    padding: 2px 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-shadow: hotpink 0 1px;
+  }
+  .wrap {
+    width: 200px;
+    border: 1px solid;
+    padding: 2px 5px;
+    word-wrap: break-word;
+  }
+  .transform {
+    display: flex;
+  }
+  .matrix {
+    background-color: aqua;
+    width: 60px;
+    height: 80px;
+    margin: 20px;
+    transform: matrix3d(0.3,0.5,0.4,0.1,0.8,0.4,0.3,0.8,0.3,0.7,0.7,0.2,0.6,0.5,0.4,0.8);
+    perspective:90;
+    perspective-origin: 50% 50%;
+    -webkit-perspective:40;
+    -webkit-perspective-origin: 10% 10%;
+  }
+  .translate {
+    background-color: aqua;
+    width: 60px;
+    height: 80px;
+    margin: 20px;
+  }
+  .scale {
+    background-color: aqua;
+    width: 60px;
+    height: 80px;
+    margin: 30px;
+  }
+  .skew {
+    background-color: aqua;
+    width: 60px;
+    height: 80px;
+    margin: 30px;
+    transform: skew(160deg,160deg)
+  }
+  .rotate {
+    background-color: aqua;
+    width: 60px;
+    height: 80px;
+    margin: 20px;
+    transform: rotate(30deg)
+  }
+  .transition {
+    background-color: aqua;
+    border: 2px solid black;
+    width: 60px;
+    height: 80px;
+    transition: width 5s, height 5s, background-color 5s, transform 5s;
+    -webkit-transition: width 5s, height 5s, background-color 5s, transform 5s;
+  }
+  .transition:hover {
+    background-color: blue;
+    width: 30px;
+    height: 40px;
+    transform: rotate (270deg);
+  }
+  .properties {
+    display: flex;
+  }
+  .size-properties {
+    background-color: aqua;
+    border: 20px solid black;
+    width: 60px;
+    height: 80px;
+    margin:30px;
+    box-sizing: border-box;
+    outline-offset: 4px;
+    outline: 5px dashed pink;
+  }
+  .size-properties2 {
+    background-color: aqua;
+    border: 20px solid black;
+    width: 60px;
+    height: 80px;
+    box-sizing: content-box;
+  }
+  
+  .resizable {
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    overflow: hidden;
+    resize: both;
+    border: 1px solid black;
   }
